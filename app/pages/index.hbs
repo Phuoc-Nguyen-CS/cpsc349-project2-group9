@@ -1,8 +1,8 @@
-<h1>Welcome to my app!</h1>
+<h1 class="m-5 text-3xl font-bold text-blue-700">Welcome to my app!</h1>
 <ul>
   {{#if currentUser}}
     <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
   {{else}}
-    <li><a href="/user/signup">Sign up for an account</a></li>
+    <li><a class="m-3 text-green-600" href="/user/signup">Sign up for an account</a></li>
   {{/if}}
 </ul>
