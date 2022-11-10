@@ -11,9 +11,27 @@
   {{#if currentUser}}
     <a href="/user/logout">Logout</a>
   {{else}}
-    <a class="nav__button" href="/user/signup">Sign up</a>
-    &nbsp;
-    <a class="nav__button" href="/user/login">Log in</a>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Planner</div>
+      <ul class="nav">
+        <li>
+          <a class="nav__button" href="/user/signup">Sign up</a>
+        </li>
+        &nbsp;
+        <li>
+          <a class="nav__button" href="/user/login">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  {{!-- <div class="navbar">
+    <div class="nav__bar">
+      <a class="nav__button" href="/user/signup">Sign up</a>
+      &nbsp;
+      <a class="nav__button" href="/user/login">Log in</a>
+    </div>
+  </div> --}}
   {{/if}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
