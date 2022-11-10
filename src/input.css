@@ -24,43 +24,33 @@
         min-h-full
         rounded;
 }
-/* make a media query that the width of the web has to be larger than 780 to apply the button class*/
-@media (min-width: 1080px) {
-    .button {
-        display: inline-block;
-        background-color: #012be4c3;
-        border-radius: 8px;
-        border: 3px double #cccccc;
-        color: #eeeeee;
-        text-align: center;
-        font-size: 15px;
-        padding: 8px;
-        width: 140px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-    }
+
+.button {
+    display: inline-block;
+    background-color: #012be4c3;
+    border-radius: 8px;
+    border: 3px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    width: 180px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
-@media (min-width: 480px) and (max-width: 1080px) {
-    .button {
-        display: inline-block;
-        background-color: #012be4c3;
-        border-radius: 8px;
-        border: 3px double #cccccc;
-        color: #eeeeee;
-        text-align: center;
-        font-size: 12px;
-        padding: 4px;
-        width: 80px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-    }
-}
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item {
+    @apply 
+        bg-indigo-700 
+        text-gray-100 text-xl font-bold 
+        flex items-center content-center justify-center rounded
+} */
+
