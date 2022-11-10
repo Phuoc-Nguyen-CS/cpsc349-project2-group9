@@ -1,4 +1,120 @@
 <h1 class="m-5 text-3xl font-bold underline text-blue-700"> Welcome to the app</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<table class="bg-white text-gray-900 table-fixed border-separate w-full shadow-none">
+    <tr>
+        <th class="bg-blue-700 text-white p-2">Sunday</th>
+        <th class="bg-blue-700 text-white p-2">Monday</th>
+        <th class="bg-blue-700 text-white p-2">Tuesday</th>
+        <th class="bg-blue-700 text-white p-2">Wednesday</th>
+        <th class="bg-blue-700 text-white p-2">Thursday</th>
+        <th class="bg-blue-700 text-white p-2">Friday</th>
+        <th class="bg-blue-700 text-white p-2">Saturday</th>
+    </tr>
+    <tr class="bg-blue-100 text-blue-900">
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+        <td class="p-2">
+            <div object>
+            <ul class="todos" key="todos" array sortable>
+                {{#for todo in todos}}
+                <li
+                    class="todo" 
+                    object
+                    key:text="@innerText" 
+                    edit:text
+                    >{{ default todo.text "Note:" }}</li>
+                {{/for}}
+            </ul>
+            <button class="button" new:todo>Add Todo</button>
+            </div>
+        </td>
+    </tr>
+    
+</table>
