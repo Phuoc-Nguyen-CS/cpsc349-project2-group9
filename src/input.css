@@ -4,13 +4,6 @@
 
 .table { @apply text-black border-separate w-full shadow-md }
 .table th { @apply bg-gray-700 text-white p-7 }
-.table th:nth-child(1) { @apply w-auto } 
-.table th:nth-child(2) { @apply w-auto } 
-.table th:nth-child(3) { @apply w-auto } 
-.table th:nth-child(4) { @apply w-auto } 
-.table th:nth-child(5) { @apply w-auto } 
-.table th:nth-child(6) { @apply w-auto } 
-.table th:nth-child(7) { @apply w-auto } 
 .table tr:nth-child(odd) { @apply bg-blue-300 text-white bg-opacity-90 }
 .table tr:nth-child(even) { @apply bg-blue-300 text-blue-900 bg-opacity-95 }
 .table td { @apply p-5 }
