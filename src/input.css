@@ -8,66 +8,131 @@
 .table tr:nth-child(even) { @apply bg-blue-300 text-blue-900 bg-opacity-95 }
 .table td { @apply p-5 }
 
-
-.login__body{
-  background-image: url("https://th.bing.com/th/id/R.9e3853b0f2cbdacf4c5d0bb76b0ed5d2?rik=T1ojvQzoEGedPw&riu=http%3a%2f%2fwww.wallpaperbetter.com%2fwallpaper%2f633%2f335%2f708%2forange-sunset-drawing-1080P-wallpaper.jpg&ehk=OV%2bzAR1Z7l7XX7IybJwbFwFKnbQFLVEcjKQRjqMHYSc%3d&risl=&pid=ImgRaw&r=0");
-  background-size: cover;
-  background-repeat: no-repeat;
+img{
+	width: 100%;
 }
-
-.signup__body{
-  background-image: url("https://static.vecteezy.com/system/resources/previews/001/308/861/non_2x/tropical-sunset-view-with-palm-trees-vector.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
+.login {
+    height: 1000px;
+    width: 100%;
+    background: #ffff;
+    position: relative;
 }
-
-.header {
+.login_box {
+    width: 1050px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
     display: flex;
-    align-items: center;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1rem;
+    overflow: hidden;
 }
-
-.navbar {
-  background: #d97706;
-  color: #fff;
-  height: 60px;
-}
-
-.navbar .logo {
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: lightblue;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.login_box .left{
+  width: 41%;
   height: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 30px;
+  padding: 25px 25px;
+  
+}
+.login_box .right{
+  width: 59%;
+  height: 100%  
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 120px;
+    background: #4338ca;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
 
-.navbar ul {
-  display: flex;
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(25, 64, 169, 0.7) 0%, rgba(246, 243, 246, 0.71) 100%),url(https://th.bing.com/th/id/R.b66fa8b953f0c30192a9c58f58a7ec0c?rik=UD92R1yCl3vOnQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-qSGjEEnD8Vc%2fUI6Oxpn4qnI%2fAAAAAAAAMgI%2fcTrdNVzkK90%2fs1600%2fSnow%2bWallpapers%2b4.jpg&ehk=MOeVY7Vxq6CPsCwz2KpjjOvkiKHFACiAvOarS2w0Ybs%3d&risl=&pid=ImgRaw&r=0);
+	color: #fff;
+	position: relative;
 }
 
-.navbar ul li {
-  margin-left: 20px;
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
 }
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: #fff0;
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 28px;
+    padding-right: 7px;
+    margin-top: -3px;
+}
+
+
+
+

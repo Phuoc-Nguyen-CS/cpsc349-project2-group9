@@ -6,32 +6,43 @@
   <title>Your App</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 </head>
 <body>
   {{#if currentUser}}
-    <a href="/user/logout">Logout</a>
+    <a class="nav__button" href="/index">Logout</a>
   {{else}}
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">Planner</div>
-      <ul class="nav">
-        <li>
-          <a class="nav__button" href="/user/signup">Sign up</a>
-        </li>
-        &nbsp;
-        <li>
-          <a class="nav__button" href="/user/login">Log in</a>
-        </li>
-      </ul>
+    <div class="container mx-auto overflow-hidden">
+    <div class="flex items-center justify-between px-4 py-5">
+
+      <div class="inline-block px-5 py-1 font-semibold bg-blue-100 rounded-full">
+        <div class="flex flex-wrap items-center -m-1">
+          <div class="w-auto p-1"><a class="text-sm" href="/user/index">&#x1F44B; Group 9</a></div>
+        </div>
+      </div>
+
+      <!-- nav tag -->
+      <div class="w-auto overflow-hidden inline-block px-5 py-1 font-semibold bg-blue-100 rounded-full">
+        <div class="flex flex-wrap items-center">
+          <div class="w-auto">
+            <ul class="flex items-center mr-16">
+              <li class="mr-9 font-medium hover:text-gray-700"><a href="#">About Us</a></li>
+              <li class="mr-9 font-medium hover:text-gray-700"><a href="/user/login">Log In</a></li>
+            </ul>
+          </div>
+
+          <!-- Get started button -->
+          <div class="w-auto hidden lg:block">
+            <div class="inline-block">
+              <button class="py-3 px-5 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200" type="button">
+                <a href="/user/signup">Sign Up</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
-  {{!-- <div class="navbar">
-    <div class="nav__bar">
-      <a class="nav__button" href="/user/signup">Sign up</a>
-      &nbsp;
-      <a class="nav__button" href="/user/login">Log in</a>
-    </div>
-  </div> --}}
+
+  </div>
   {{/if}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
