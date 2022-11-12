@@ -1,134 +1,190 @@
+<html class="bg-white">
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Weekly Planner</div>
-            <ul class="nav">
-                <li>
-                    <a href="/index">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-            </ul>
+    {{> mainNav}}
+
+    <main class="container mx-w-6xl mx-auto py-4">
+        <div class="flex flex-col space-y-8">
+
+            <!-- Start First Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 xl:p-0 gap-4 xl:gap-6">
+                <div class="col-span-1 md:col-span-2 lg:col-span-4 flex justify-between">
+                    <h1 class="md:text-lg text-gray-700 font-bold tracking-wide md:tracking-wider">
+                        Week Plan</h2>
+                    <a href="#"
+                            class="px-4 py-2 text-xs bg-blue-100 text-blue-500 rounded uppercase tracking-wider font-semibold hover:bg-blue-300">More</a>
+                </div>
+
+                <!-- Monday -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                        <div class="flex flex-col">
+                            <h3 class="mt-1 text-lg text-blue-500 font-bold">Monday</h3>
+                                <div object>
+                                    <ul class="todos" key="monday" array sortable>
+                                        {{#for todo in todos}}
+                                        <li
+                                            class="todo" 
+                                            object
+                                            key:text="@innerText" 
+                                            edit:text
+                                            >{{ default todo.text "Click here to add item" }}</li>
+                                        {{/for}}
+                                    </ul>
+                                    <button class="main_button" new:todo>Add Todo</button>
+                                </div>
+                        </div>
+                        <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                            <img src="assets/images/Monday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                        </div>
+                    
+                </div>
+
+                <!-- Tuesday -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-blue-500 font-bold">Tuesday</h3>
+                        <div object>
+                            <ul class="todos" key="tuesday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Tuesday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+
+
+                <!-- Wednesday -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-blue-500 font-bold">Wednesday</h3>
+                        <div object>
+                            <ul class="todos" key="wednesday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Wednesday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+
+
+                <!-- Thursday -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-blue-500 font-bold">Thursday</h3>
+                        <div object>
+                            <ul class="todos" key="thursday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Thursday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+
+
+                <!-- Friday -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-blue-500 font-bold">Friday</h3>
+                        <div object>
+                            <ul class="todos" key="friday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Friday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+
+
+                <!-- Saturday -->
+                <div class="bg-green-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-green-500 font-bold">Saturday</h3>
+                        <div object>
+                            <ul class="todos" key="saturday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Saturday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+
+                <!-- Sunday -->
+                <div class="bg-yellow-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start">
+                    <div class="flex flex-col">
+                        <h3 class="mt-1 text-lg text-yellow-500 font-bold">Sunday</h3>
+                        <div object>
+                            <ul class="todos" key="sunday" array sortable>
+                                {{#for todo in todos}}
+                                <li
+                                    class="todo" 
+                                    object
+                                    key:text="@innerText" 
+                                    edit:text
+                                    >{{ default todo.text "Click here to add item" }}</li>
+                                {{/for}}
+                            </ul>
+                            <button class="main_button" new:todo>Add Todo</button>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-1 xl:p-2 rounded-md">
+                        <img src="assets/images/Sunday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                    </div>
+                </div>
+            </div>
+            <!-- End First Row -->
         </div>
-    </nav>
+    </main>
+    <!-- End Main -->
+
+  </div>
 </body>
-<table class="bg-white text-gray-900 table-fixed border-separate w-full shadow-none">
-    <tr>
-        <th class="bg-blue-700 text-white p-2">Sunday</th>
-        <th class="bg-blue-700 text-white p-2">Monday</th>
-        <th class="bg-blue-700 text-white p-2">Tuesday</th>
-        <th class="bg-blue-700 text-white p-2">Wednesday</th>
-        <th class="bg-blue-700 text-white p-2">Thursday</th>
-        <th class="bg-blue-700 text-white p-2">Friday</th>
-        <th class="bg-blue-700 text-white p-2">Saturday</th>
-    </tr>
-    <tr class="bg-blue-100 text-blue-900">
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-        <td class="p-2">
-            <div object>
-            <ul class="todos" key="todos" array sortable>
-                {{#for todo in todos}}
-                <li
-                    class="todo" 
-                    object
-                    key:text="@innerText" 
-                    edit:text
-                    >{{ default todo.text "New todo item" }}</li>
-                {{/for}}
-            </ul>
-            <button class="bg-blue-700 text-white p-2 add-todo" new:todo>Add Todo</button>
-            </div>
-        </td>
-    </tr>
-    
-</table>
+</html>

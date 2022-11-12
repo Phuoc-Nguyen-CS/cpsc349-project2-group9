@@ -10,7 +10,7 @@
 </head>
   
 <body>
-
+  {{> nav}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
@@ -32,5 +32,8 @@
     <script src="/assets/js/remake-init.js"></script>
   {{/if}}
   <script src="/assets/js/main.js"></script>
+
+  {{> footer}}
+
 </body>
 </html>

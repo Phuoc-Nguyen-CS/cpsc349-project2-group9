@@ -8,6 +8,16 @@
 .table tr:nth-child(even) { @apply bg-blue-300 text-blue-900 bg-opacity-95 }
 .table td { @apply p-5 }
 
+
+.main_button {
+    @apply bg-blue-700 hover:bg-blue-500 text-sm text-white font-bold py-0.5 px-2 rounded;
+}
+
+.interactive_hidden {
+    @apply hidden xl:block;
+}
+
+
 img{
 	width: 100%;
 }
@@ -133,6 +143,6 @@ img{
     margin-top: -3px;
 }
 
-
-
-
+:root {
+  color-scheme: light;
+}

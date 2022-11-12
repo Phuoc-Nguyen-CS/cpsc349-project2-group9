@@ -4,16 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your App</title>
-  <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/theme.css">
 </head>
+  
 <body>
-  {{#if currentUser}}
-    {{!-- <a class="nav__button" href="/index">Logout</a> --}}
-  {{else}}
-    {{> nav}}
-  {{/if}}
+
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
@@ -35,7 +30,5 @@
     <script src="/assets/js/remake-init.js"></script>
   {{/if}}
   <script src="/assets/js/main.js"></script>
-
-  {{> footer}}
 </body>
 </html>
