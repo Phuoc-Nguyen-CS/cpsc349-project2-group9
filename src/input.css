@@ -133,6 +133,6 @@ img{
     margin-top: -3px;
 }
 
-
-
-
+:root {
+  color-scheme: light;
+}
