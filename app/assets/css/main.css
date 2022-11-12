@@ -1052,37 +1052,30 @@ img{
 }
 
 .login_box {
+  display: flex;
+  position: absolute;
+  /* defines the box */
   width: 1050px;
   height: 600px;
-  position: absolute;
   top: 50%;
   left: 50%;
+  /* transform translate centers the box in the middle */
   transform: translate(-50%,-50%);
   background: #fff;
   border-radius: 10px;
   box-shadow: 1px 4px 22px -8px #0004;
-  display: flex;
   overflow: hidden;
 }
 
 .login_box .left{
-  width: 41%;
+  width: 35%;
   height: 100%;
   padding: 25px 25px;
 }
 
 .login_box .right{
-  width: 59%;
+  width: 65%;
   height: 100%
-}
-
-.left .top_link a {
-  color: #452A5A;
-  font-weight: 400;
-}
-
-.left .top_link{
-  height: 20px
 }
 
 .left .contact{
@@ -1113,7 +1106,7 @@ img{
 }
 
 .left{
-  background: linear-gradient(-45deg, #dcd7e0, #fff);
+  background: linear-gradient(-95deg, #dcd7e0, #fff);
 }
 
 .submit {
