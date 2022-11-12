@@ -113,15 +113,7 @@ img{
   font-weight: 400;
 }
 
-.right .right-inductor{
-  position: absolute;
-  width: 70px;
-  height: 7px;
-  background: #fff0;
-  left: 50%;
-  bottom: 70px;
-  transform: translate(-50%, 0%);
-}
+
 .top_link img {
     width: 28px;
     padding-right: 7px;
