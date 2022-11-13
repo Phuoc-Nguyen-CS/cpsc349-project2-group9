@@ -17,6 +17,25 @@
     @apply hidden xl:block;
 }
 
+.weekday {
+  @apply bg-blue-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start
+}
+
+.weekend {
+  @apply bg-green-50 p-6 rounded-xl border border-gray-50 flex justify-between items-start
+}
+
+.weekday-text {
+  @apply mt-1 text-lg text-blue-500 font-bold
+}
+
+.weekend-text {
+  @apply mt-1 text-lg text-green-500 font-bold
+}
+
+.day-icon-img {
+  @apply w-auto h-8 md:h-6 xl:h-8 object-cover
+}
 
 img{
 	width: 100%;
